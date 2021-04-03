@@ -1,0 +1,52 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme, remove .NoActionBar if you want to use base theme for toolbar -->
+    <style name="Theme.GithubUser" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_light</item>
+        <item name="colorPrimaryVariant">@color/purple_dark</item>
+        <item name="colorOnPrimary">@color/pink_light</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/flamingo</item>
+        <item name="colorSecondaryVariant">@color/pink_dark</item>
+        <item name="colorOnSecondary">@color/pink_light</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Background color -->
+        <item name="android:windowBackground">@color/pink_light</item>
+        <!-- Text Color -->
+        <item name="android:textColor">@color/brown</item>
+        <item name="android:fontFamily">@font/mithella_regular</item>
+    </style>
+
+    <style name="ToolbarTheme" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:background">@color/purple_light</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:fontFamily">@font/ex_rounded_bold</item>
+    </style>
+
+    <style name="ToolbarTheme.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">21sp</item>
+    </style>
+
+    <style name="TitleCardView">
+        <item name="android:textSize">16sp</item>
+        <item name="fontFamily">@font/ex_rounded_bold</item>
+    </style>
+
+    <style name="TextLarge">
+        <item name="android:textSize">18sp</item>
+        <item name="fontFamily">@font/ex_rounded_bold</item>
+    </style>
+    
+    <style name="SplashTheme" parent="Theme.GithubUser">
+        <item name="android:windowBackground">@drawable/splash_logo</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="Divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">2dp</item>
+        <item name="android:background">?android:attr/listDivider</item>
+        <item name="color">@color/brown</item>
+    </style>
+</resources>
